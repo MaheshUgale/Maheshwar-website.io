@@ -195,6 +195,22 @@ nav.sticky .menu-btn {
     margin: 5px 0px;
 }
 
+button{
+    transition: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+button:is(:active,:hover) {
+
+    position: relative;
+    box-shadow:none ;
+    transform: scale(0.9);
+  }
+  button:hover {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
 .home .button {
     margin: 14px 0px;
 }
