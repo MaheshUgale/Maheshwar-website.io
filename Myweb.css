@@ -139,7 +139,11 @@ nav.sticky .menu-btn {
 .home {
     height: 100vh;
     width: 100%;
-    background-color: #edf7fe;
+    background-color: #ffffff;
+    background: url(/Assets/sysadmin_03.jpg);
+    background-repeat: no-repeat;
+    background-position: 97% 91%;
+    background-size: 66%;
 }
 
 .home .home-container {
@@ -441,7 +445,7 @@ section .title span::after {
     width: fit-content;
     margin-top: 9px;
     border-radius: 20px;
-    transform: translate(50%);
+    transform: translate(40%);
 
 }
 
