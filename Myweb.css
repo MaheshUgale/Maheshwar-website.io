@@ -439,7 +439,7 @@ section .title span::after {
     margin: 0px 2px;
     display: flex;
     align-items: center;
-    background: #ff6e67;
+    background: #2779a7;
     color: var(--white-color);
     padding: 0 10px;
     width: fit-content;
@@ -665,12 +665,12 @@ section .title span::after {
     font-size: 30px;
     margin: 10px 0px;
     font-weight: bold;
-    color: #4166b8;
+    color: #2779a7;
 }
 .subImgTitile {
     padding-bottom: 14px;
     font-size: 23px;
-    color: #4166b8;
+    color: #2779a7;
     font-weight: 500;
     font-family: 'roboto';
 }
