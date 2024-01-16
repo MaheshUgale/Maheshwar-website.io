@@ -1,14 +1,20 @@
+@font-face {
+    font-family: roboto;
+    src: url(/Assets/fontFamily/Roboto-Regular.woff);
+  }
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
+    font-family: 'roboto';
 }
 
 /* :root selector allows you to target the highest-level “parent” element in the DOM, or document tree */
 :root {
-    --primary-color: #ff8882;
+    --primary-color: #2779a7;
     --black-color: #000000;
     --white-color: #ffffff;
 }
@@ -29,15 +35,7 @@ nav {
     display: none;
 
 }
-    /* fixed; is positioned relative to the viewport, which means it always stays in the same place even if the    page is scrolled: */
-    /* CSS transitions allows you to change property values smoothly, over a given duration.
-    Mouse over the element below to see a CSS transition effect
-    transition
-    transition-delay
-    transition-duration
-    transition-property
-    transition-timing-function
-*/
+
 nav.sticky {
     background: var(--primary-color);
     padding: 13px 0px;
@@ -54,7 +52,7 @@ nav .navbar {
 nav .navbar .logo a {
     color: var(--primary-color);
     font-size: 35px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 nav.sticky .navbar .logo a {
@@ -72,7 +70,7 @@ nav .navbar .menu li {
 }
 
 nav .navbar .menu li:hover {
-    border-bottom: 2px solid #ff8882;
+    border-bottom: 2px solid #2779a7;
     transition: all 0.2s ease;
 }
 
@@ -235,17 +233,18 @@ nav.sticky .menu-btn {
     .home {
         height: 100vh;
         width: 100%;
-        background-color: #edf7fe;
-        background: url(/Assets/Home.jpg);
-        background-position: center center;
+        background-color: #ffffff;
+        background: url(/Assets/sysadmin_03.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-position: 105% 91%;
+        background-size: 50%;
+        
     }
 }
 
 @media (min-width: 992px) {
     .navbar .socialMedia-icons a {
-        font-size: 20px;
+        font-size: 24px;
         color: var(--primary-color);
         margin: 0 5px;
         display: block;
@@ -669,10 +668,10 @@ section .title span::after {
     font-size: 23px;
     color: #4166b8;
     font-weight: 500;
-    font-family: cursive;
+    font-family: 'roboto';
 }
 .hobbies .mainCallout .callout:hover {
-    background-image: linear-gradient(to top, #ff6e67, white);
+    background-image: linear-gradient(to top, #2779a7, white);
     /* color: var(--white-color); */
     scale: 1.1;
 }
@@ -790,7 +789,7 @@ section .title span::after {
     background: var(--primary-color);
     padding: 15px 0px;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'roboto';
 }
 
 .footer .text span {
@@ -843,7 +842,7 @@ section .title span::after {
 .lowerCallout{
     text-align: left;
     padding: 0px 31px;
-    font-family: cursive;
+    font-family: 'roboto';
 }
 li{
     padding-bottom: 10px;
@@ -852,4 +851,41 @@ li{
     text-align: start;
     padding-bottom: 5px;
     font-size: 20px;
+}
+
+
+hr.sep{
+    margin: 12px 0;
+    border: 0;
+    text-align: center;
+    
+    &:before {
+      content: "\2022 \2022 \2022";
+      font-size: 50px;
+      color: #4F8BCA;
+    }
+  }
+
+
+
+  
+
+  .text-container {
+    display: flex;
+}
+
+.reveal-text {
+    opacity: 0;
+    animation: revealAnimation 2s forwards alternate;
+}
+
+@keyframes revealAnimation {
+    0% {
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
