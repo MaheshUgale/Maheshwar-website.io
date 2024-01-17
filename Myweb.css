@@ -76,7 +76,7 @@ nav .navbar .menu li:hover {
 
 nav .navbar .menu li a {
     color: var(--black-color);
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 500;
     /* text-transform: uppercase; */
     padding: 6px 0px;
@@ -848,9 +848,7 @@ section .title span::after {
     padding: 0px 31px;
     font-family: 'roboto';
 }
-li{
-    padding-bottom: 10px;
-}
+
 .date{
     text-align: start;
     padding-bottom: 5px;
