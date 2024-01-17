@@ -325,6 +325,9 @@ section .title span::after {
 .about-details .right-box {
     margin-top: 25px;
 }
+.about-details .right-box li {
+    padding-bottom: 10px;
+}
 
 
 .about-details .right-box .header {
