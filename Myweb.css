@@ -1,7 +1,7 @@
 @font-face {
     font-family: roboto;
     src: url(/Assets/fontFamily/Roboto-Regular.woff);
-  }
+}
 
 * {
     padding: 0;
@@ -27,7 +27,7 @@ section .img-responsive {
 
 /* navbar-style */
 nav {
-     position: fixed;
+    position: fixed;
     padding: 20px 0px;
     width: 100%;
     z-index: 100;
@@ -174,12 +174,13 @@ nav.sticky .menu-btn {
     transform: translateY(1em);
     animation: reveal 1s forwards
 }
+
 @keyframes reveal {
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
+}
 
 .home .text-four {
     color: var(--black-color);
@@ -242,7 +243,7 @@ nav.sticky .menu-btn {
         background-repeat: no-repeat;
         background-position: 105% 91%;
         background-size: 50%;
-        
+
     }
 }
 
@@ -270,7 +271,7 @@ section {
 
 section .content {
     margin: 40px auto;
-    width: 80%;
+    width: 90%;
     padding: 40px 0px;
 }
 
@@ -324,7 +325,9 @@ section .title span::after {
 
 .about-details .right-box {
     margin-top: 25px;
+    padding: 20px;
 }
+
 .about-details .right-box li {
     padding-bottom: 10px;
 }
@@ -670,6 +673,7 @@ section .title span::after {
     font-weight: bold;
     color: #2779a7;
 }
+
 .subImgTitile {
     padding-bottom: 14px;
     font-size: 23px;
@@ -677,6 +681,7 @@ section .title span::after {
     font-weight: 500;
     font-family: 'roboto';
 }
+
 .hobbies .mainCallout .callout:hover {
     background-image: linear-gradient(to top, #2779a7, white);
     /* color: var(--white-color); */
@@ -697,6 +702,7 @@ section .title span::after {
     justify-content: space-between;
     flex-direction: column;
 }
+
 #contactPopup {
     display: none;
     transform: scale(0);
@@ -707,6 +713,7 @@ section .title span::after {
     display: block;
     transform: scale(1);
 }
+
 .hobbies .mainCallout .callout {
     margin: 20px 0px;
     text-align: center;
@@ -718,7 +725,8 @@ section .title span::after {
     display: flex;
     flex-direction: column;
 }
-/* offset-x | offset-y | blur-radius | spread-radius | color  : Box shadow*/ 
+
+/* offset-x | offset-y | blur-radius | spread-radius | color  : Box shadow*/
 @media (min-width: 576px) {
     .hobbies .mainCallout {
         flex-direction: row;
@@ -786,7 +794,7 @@ section .title span::after {
 .contact .content .text {
     text-align: center;
     margin: auto;
-    width: 80%;
+    width: 90%;
     padding-bottom: 40px;
 }
 
@@ -843,39 +851,40 @@ section .title span::after {
     }
 }
 
-.f-20{
- font-size: 20px;
+.f-20 {
+    font-size: 20px;
 }
-.lowerCallout{
+
+.lowerCallout {
     text-align: left;
-    padding: 0px 31px;
+    padding: 0px 10px;
     font-family: 'roboto';
 }
 
-.date{
+.date {
     text-align: start;
     padding-bottom: 5px;
     font-size: 20px;
 }
 
 
-hr.sep{
+hr.sep {
     margin: 12px 0;
     border: 0;
     text-align: center;
-    
+
     &:before {
-      content: "\2022 \2022 \2022";
-      font-size: 50px;
-      color: #4F8BCA;
+        content: "\2022 \2022 \2022";
+        font-size: 50px;
+        color: #4F8BCA;
     }
-  }
+}
 
 
 
-  
 
-  .text-container {
+
+.text-container {
     display: flex;
 }
 
@@ -889,10 +898,9 @@ hr.sep{
         opacity: 0;
         transform: translateX(-200%);
     }
+
     100% {
         opacity: 1;
         transform: translateX(0);
     }
 }
-
-
